@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "AZ functions tester",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
