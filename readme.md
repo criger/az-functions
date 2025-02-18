@@ -5,13 +5,13 @@
 ## Alle HttpTrigger henter informasjon fra Brønnøysundregistrene.
 
 - Hent informasjon om Sopra Steria
-https://crigertest.azurewebsites.net/api/getSopraSteria
+  https://crigertest.azurewebsites.net/api/getSopraSteria
   
 - Hent informasjon om et gitt selskap, via organisasjonsnummer
-https://crigertest.azurewebsites.net/api/organization?orgId=FYLL_INN_ORGANISASJONSNUMMER_HER
+  https://crigertest.azurewebsites.net/api/organization?orgId=FYLL_INN_ORGANISASJONSNUMMER_HER
 
 - Hent en liste over selskaper som matcher det man søker etter, dvs selskapsnavn
-https://crigertest.azurewebsites.net/api/getByName?name=FYLL_INN_SELSKAPSNAVN_HER
+  https://crigertest.azurewebsites.net/api/getByName?name=FYLL_INN_SELSKAPSNAVN_HER
 
 ## Men TimerTrigger da??
 Denne kjører etter gitte intervaller som er bestemt i Environments seksjonen for Functions i Azure.
