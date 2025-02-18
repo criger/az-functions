@@ -1,11 +1,22 @@
-# TimerTrigger - C<span>#</span>
+# Azure functions -> TimerTrigger og HttpTrigger- C<span>#</span>
 
-The `TimerTrigger` makes it incredibly easy to have your functions executed on a schedule. This sample demonstrates a simple use case of calling your function every 5 minutes.
+## Hvordan kalle på HttpTrigger
 
-## How it works
+# Alle HttpTrigger henter informasjon fra Brønnøysundregistrene.
 
-For a `TimerTrigger` to work, you provide a schedule in the form of a [cron expression](https://en.wikipedia.org/wiki/Cron#CRON_expression)(See the link for full details). A cron expression is a string with 6 separate expressions which represent a given schedule via patterns. The pattern we use to represent every 5 minutes is `0 */5 * * * *`. This, in plain text, means: "When seconds is equal to 0, minutes is divisible by 5, for any hour, day of the month, month, day of the week, or year".
+- Hent informasjon om Sopra Steria
+  https://crigertest.azurewebsites.net/api/getSopraSteria
+  
+- Hent informasjon om et gitt selskap, via organisasjonsnummer
+  https://crigertest.azurewebsites.net/api/organization?orgId=FYLL_INN_ORGANISASJONSNUMMER_HER
 
-## Learn more
+- Hent en liste over selskaper som matcher det man søker etter, dvs selskapsnavn
+  https://crigertest.azurewebsites.net/api/getByName?name=FYLL_INN_SELSKAPSNAVN_HER
 
-<TODO> Documentation
+## Men TimerTrigger da??
+Denne kjører etter gitte intervaller som er bestemt i Environments seksjonen for Functions i Azure.
+Som standard er denne satt til ___55 11 * 2 4 *___
+Dette oversettes til: kl 11:55, torsdager i måned 2 (dvs februar)
+
+## Trenger du mer informasjon?
+Ta kontakt med utvikler Cristhian Gertner, mobil: 916 38 222
